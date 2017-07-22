@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>发现不一样的世界</title>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://isomorphism.space/atom.xml" rel="self"/>
   
   <link href="http://isomorphism.space/"/>
   <updated>2017-07-22T07:15:09.778Z</updated>
