@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://isomorphism.space/"/>
   <updated>2017-07-22T02:26:33.372Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://isomorphism.space/</id>
   
   <author>
     <name>little</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>hahaha</title>
-    <link href="http://yoursite.com/hahaha/"/>
-    <id>http://yoursite.com/hahaha/</id>
+    <link href="http://isomorphism.space/hahaha/"/>
+    <id>http://isomorphism.space/hahaha/</id>
     <published>2017-07-22T02:24:11.000Z</published>
     <updated>2017-07-22T02:26:33.372Z</updated>
     
@@ -32,14 +32,14 @@
     </summary>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="http://isomorphism.space/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>一半忧伤 一半明媚</title>
-    <link href="http://yoursite.com/%E8%AF%95%E4%B8%80%E4%B8%8B%EF%BC%81/"/>
-    <id>http://yoursite.com/试一下！/</id>
+    <link href="http://isomorphism.space/%E8%AF%95%E4%B8%80%E4%B8%8B%EF%BC%81/"/>
+    <id>http://isomorphism.space/试一下！/</id>
     <published>2017-07-16T15:11:23.000Z</published>
     <updated>2017-07-22T02:15:36.894Z</updated>
     
