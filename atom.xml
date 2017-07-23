@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isomorphism.space/"/>
-  <updated>2017-07-23T07:10:48.403Z</updated>
+  <updated>2017-07-23T09:28:01.488Z</updated>
   <id>http://isomorphism.space/</id>
   
   <author>
@@ -19,10 +19,11 @@
     <title>有效管理你的健康</title>
     <link href="http://isomorphism.space/health/%E6%9C%89%E6%95%88%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E5%81%A5%E5%BA%B7/"/>
     <id>http://isomorphism.space/health/有效管理你的健康/</id>
-    <published>2017-07-23T07:10:45.218Z</published>
-    <updated>2017-07-23T07:10:48.403Z</updated>
+    <published>2017-07-23T09:27:57.669Z</published>
+    <updated>2017-07-23T09:28:01.488Z</updated>
     
     <content type="html"><![CDATA[<p>最近在<strong>得到</strong>上学到了不错的健康管理知识，希望这些知识对你也有所帮助！</p>
+<h1 id="关于心肺功能"><a href="#关于心肺功能" class="headerlink" title="关于心肺功能"></a>关于心肺功能</h1><p>心肺功能才是我们健康的基础</p>
 <h2 id="健身的目的是什么"><a href="#健身的目的是什么" class="headerlink" title="健身的目的是什么"></a>健身的目的是什么</h2><p>运动和健身的首要目的是获得更好的精神状态和健康的身体，而不是更瘦的身体和更多的肌肉，<strong>不建议</strong>普通人一上来就做高强度的训练或跑步。</p>
 <h2 id="心肺功能是一切的基础"><a href="#心肺功能是一切的基础" class="headerlink" title="心肺功能是一切的基础"></a>心肺功能是一切的基础</h2><ul>
 <li>每个人先天的心肺功能差异很大，但是可以通过后天训练改善</li>
@@ -31,7 +32,7 @@
 </ul>
 <h2 id="心肺功能训练"><a href="#心肺功能训练" class="headerlink" title="心肺功能训练"></a>心肺功能训练</h2><ul>
 <li>先要了解自己的心肺功能，测量最大摄氧量或静态心率，制定<strong>适合自己</strong>身体条件的训练方法</li>
-<li>利用<strong>卡氏公式</strong>找准自己的心肺功能训练区间：<br>$$ 心肺训练心率=(220-年龄-静态心率)(55\%-65\%)+静态心率 $$</li>
+<li>利用<strong>卡氏公式</strong>找准自己的心肺功能训练区间：<br>$$ 心肺训练心率=(220-年龄-静态心率)\times(55\%到65\%)+静态心率 $$</li>
 <li>保持在适合心肺训练的心率区间，走路是最佳的心肺训练方法，尤其是上坡走</li>
 <li>心肺训练并不需要长时间连续做，做一天歇一天效果更佳</li>
 </ul>
@@ -39,12 +40,43 @@
 <li>心肺功能训练可以改善睡眠质量</li>
 <li>睡眠质量很差，不要做高强度训练，舒缓的慢走和瑜伽更合适</li>
 </ul>
+<hr>
+<h1 id="关于减肥"><a href="#关于减肥" class="headerlink" title="关于减肥"></a>关于减肥</h1><p>减肥减的是<strong>体脂</strong>，减脂并不是越多越好，男性的体脂率一般在15%~20%比较好，女性的体脂率在20%~25%比较好</p>
+<h2 id="减肥中存在的几个误区"><a href="#减肥中存在的几个误区" class="headerlink" title="减肥中存在的几个误区"></a>减肥中存在的几个误区</h2><ul>
+<li>增肌减肥：增肌不能使<a href="https://baike.baidu.com/item/%E5%9F%BA%E7%A1%80%E4%BB%A3%E8%B0%A2/944061?fr=aladdin" target="_blank" rel="external">基础代谢</a>明显提升，减脂效率很低，其实胖子的肌肉比瘦子要多，只是看不见而已</li>
+<li>高强度运动减肥：高强度运动更多地消耗糖分和水分，而不是消耗脂肪，还容易造成大脑供能不足；高强度运动后补充些糖和水体重又会回来；脂肪的消耗是需要氧气的，低强度运动更适合减脂</li>
+<li>节食减肥：节食会造成大脑供能不足，损伤免疫力，影响健康；</li>
+</ul>
+<h2 id="减肥前应该先了解自己的体脂率"><a href="#减肥前应该先了解自己的体脂率" class="headerlink" title="减肥前应该先了解自己的体脂率"></a>减肥前应该先了解自己的体脂率</h2><p><a href="https://baike.baidu.com/item/%E4%BD%93%E8%84%82%E7%8E%87/3869892?fr=aladdin" target="_blank" rel="external">体脂率</a>比体重更能反映你的胖瘦，买个体脂称或去健身房测体脂</p>
+<h2 id="科学的饮食能帮你有效的减肥"><a href="#科学的饮食能帮你有效的减肥" class="headerlink" title="科学的饮食能帮你有效的减肥"></a>科学的饮食能帮你有效的减肥</h2><ul>
+<li><p>单独计算卡路里是无效的，还应该把吸收转化率考虑进来：</p>
+<blockquote>
+<ul>
+<li>糖的吸收率：约70%</li>
+<li>脂肪的吸收率：约96%，相当于你吃了多少脂肪，身体就多出了多少脂肪 — <a href="https://baike.baidu.com/item/%E9%AB%98%E8%84%82%E8%82%AA%E9%A3%9F%E5%93%81/6500474?fr=aladdin" target="_blank" rel="external"><em>高脂肪食物</em></a></li>
+<li>蛋白质的吸收率：无固定值，你缺多少蛋白质，那么身体最多能吸收多少蛋白质</li>
+</ul>
+</blockquote>
+</li>
+<li><p>提高蛋白质的摄入，保证糖分的基本供给，减少脂肪的摄入,这样才能健康的减肥</p>
+</li>
+<li><p>用于会变瘦的公式—<em>减脂人群每日摄入能量公式</em>：</p>
+<blockquote>
+<p>对于25岁以上男性：<br>$$糖(g)=\frac{体重(kg)\times2.0g}{kg}$$<br>$$脂肪(g)=\frac{体重(kg)\times1.0g}{kg}$$<br>$$蛋白质(g)=\frac{体重(kg)\times1.4g}{kg}$$<br>对于25岁以上的女性：<br>$$糖(g)=\frac{体重(kg)\times1.8g}{kg}$$<br>$$脂肪(g)=\frac{体重(kg)\times1.0g}{kg}$$<br>$$蛋白质(g)=\frac{体重(kg)\times1.4g}{kg}$$</p>
+</blockquote>
+</li>
+<li><p>饮食配合低强度运动，减肥效果更加显著，在减脂心率区间进行坡度走，能帮助减脂—<em>关于心肺功能的卡氏公式是用于练习心肺功能的，这里是用于减脂，所以强度要更低</em></p>
+<blockquote>
+<p>$$减脂心率=(220-年龄-静态心率)\times(35\%到45\%)+静态心率$$</p>
+</blockquote>
+</li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;最近在&lt;strong&gt;得到&lt;/strong&gt;上学到了不错的健康管理知识，希望这些知识对你也有所帮助！&lt;/p&gt;
-&lt;h2 id=&quot;健身的目的是什么&quot;&gt;&lt;a href=&quot;#健身的目的是什么&quot; class=&quot;headerlink&quot; title=&quot;健身的目的是什么&quot;&gt;&lt;/a&gt;健身的目
+&lt;h1 id=&quot;关于心肺功能&quot;&gt;&lt;a href=&quot;#关于心肺功能&quot; class=&quot;headerlink&quot; title=&quot;关于心肺功能&quot;&gt;&lt;/a&gt;关于心肺功能&lt;/h1
     
     </summary>
     
