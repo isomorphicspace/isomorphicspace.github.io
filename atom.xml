@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>another world</title>
+  <title>也许李大锤</title>
   <subtitle>站在巨人的肩膀上</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>http://isomorphism.space/</id>
   
   <author>
-    <name>little</name>
+    <name>也许李大锤</name>
     
   </author>
   
