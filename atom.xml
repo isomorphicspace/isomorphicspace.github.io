@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isomorphism.space/"/>
-  <updated>2017-07-23T06:49:51.385Z</updated>
+  <updated>2017-07-23T06:54:12.335Z</updated>
   <id>http://isomorphism.space/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有效管理你的健康</title>
+    <link href="http://isomorphism.space/health/mathjax-%20true/"/>
+    <id>http://isomorphism.space/health/mathjax- true/</id>
+    <published>2017-07-23T06:54:12.189Z</published>
+    <updated>2017-07-23T06:54:12.335Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在<strong>得到</strong>上学到了不错的健康管理知识，希望这些知识对你也有所帮助！</p>
+<h2 id="健身的目的是什么"><a href="#健身的目的是什么" class="headerlink" title="健身的目的是什么"></a>健身的目的是什么</h2><p>运动和健身的首要目的是获得更好的精神状态和健康的身体，而不是更瘦的身体和更多的肌肉，<strong>不建议</strong>普通人一上来就做高强度的训练或跑步。</p>
+<h2 id="心肺功能是一切的基础"><a href="#心肺功能是一切的基础" class="headerlink" title="心肺功能是一切的基础"></a>心肺功能是一切的基础</h2><ul>
+<li>每个人先天的心肺功能差异很大，但是可以通过后天训练改善</li>
+<li><strong>最大摄氧量</strong>是衡量心肺功能的重要指标，男性需要达到40，女性需要达到36，30左右有很大的健康风险</li>
+<li>通过合理强度的心肺功能训练，可以改善心血管系统</li>
+</ul>
+<h2 id="心肺功能训练"><a href="#心肺功能训练" class="headerlink" title="心肺功能训练"></a>心肺功能训练</h2><ul>
+<li>先要了解自己的心肺功能，测量最大摄氧量或静态心率，制定<strong>适合自己</strong>身体条件训练方法</li>
+<li>利用<strong>卡氏公式</strong>找准自己的心肺功能训练区间：<br>$$ 心肺训练心率=(220-年龄-静态心率)(55\%-65\%)+静态心率 $$</li>
+<li>保持在适合心肺训练的心率区间，走路是最佳的心肺训练方法，尤其是上坡走</li>
+<li>心肺训练并不需要长时间连续做，做一天歇一天效果更佳</li>
+</ul>
+<h2 id="训练与睡眠"><a href="#训练与睡眠" class="headerlink" title="训练与睡眠"></a>训练与睡眠</h2><ul>
+<li>心肺功能训练可以改善睡眠质量</li>
+<li>睡眠质量很差，不要做高强度训练，舒缓的慢走和瑜伽更合适</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在&lt;strong&gt;得到&lt;/strong&gt;上学到了不错的健康管理知识，希望这些知识对你也有所帮助！&lt;/p&gt;
+&lt;h2 id=&quot;健身的目的是什么&quot;&gt;&lt;a href=&quot;#健身的目的是什么&quot; class=&quot;headerlink&quot; title=&quot;健身的目的是什么&quot;&gt;&lt;/a&gt;健身的目
+    
+    </summary>
+    
+      <category term="health" scheme="http://isomorphism.space/categories/health/"/>
+    
+    
+      <category term="健康" scheme="http://isomorphism.space/tags/%E5%81%A5%E5%BA%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>有效管理你的健康</title>
