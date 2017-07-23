@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isomorphism.space/"/>
-  <updated>2017-07-23T06:45:26.856Z</updated>
+  <updated>2017-07-23T06:49:51.385Z</updated>
   <id>http://isomorphism.space/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>有效管理你的健康</title>
-    <link href="http://isomorphism.space/%E5%81%A5%E5%BA%B7/%E6%9C%89%E6%95%88%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E5%81%A5%E5%BA%B7/"/>
-    <id>http://isomorphism.space/健康/有效管理你的健康/</id>
-    <published>2017-07-23T06:45:23.764Z</published>
-    <updated>2017-07-23T06:45:26.856Z</updated>
+    <link href="http://isomorphism.space/health/%E6%9C%89%E6%95%88%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E5%81%A5%E5%BA%B7/"/>
+    <id>http://isomorphism.space/health/有效管理你的健康/</id>
+    <published>2017-07-23T06:49:48.381Z</published>
+    <updated>2017-07-23T06:49:51.385Z</updated>
     
     <content type="html"><![CDATA[<p>最近在<strong>得到</strong>上学到了不错的健康管理知识，帮自己纠正了曾经对健康认识的错误，希望这些知识对你也有所帮助！</p>
 <h2 id="健身的目的是什么"><a href="#健身的目的是什么" class="headerlink" title="健身的目的是什么"></a>健身的目的是什么</h2><p>运动和健身的首要目的是获得更好的精神状态和健康的身体，而不是更瘦的身体和更多的肌肉，<strong>不建议</strong>普通人一上来就做高强度的训练或跑步。</p>
@@ -48,7 +48,7 @@
     
     </summary>
     
-      <category term="健康" scheme="http://isomorphism.space/categories/%E5%81%A5%E5%BA%B7/"/>
+      <category term="health" scheme="http://isomorphism.space/categories/health/"/>
     
     
       <category term="健康" scheme="http://isomorphism.space/tags/%E5%81%A5%E5%BA%B7/"/>
