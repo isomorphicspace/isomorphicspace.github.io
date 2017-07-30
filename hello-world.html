@@ -323,13 +323,6 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    
   </div>
 
 
@@ -489,23 +482,6 @@
     ---   访问量 <span id="busuanzi_value_site_pv"></span> 次
 </span>
 
-<% if (config.disqus_shortname){ %>
-<script>
-  var disqus_shortname = '<%= config.disqus_shortname %>';
-  <% if (page.permalink){ %>
-  var disqus_url = '<%= config.url +"/"+ page.path %>';
-  <% } %>
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<% } %>
-
-
 
 
         
@@ -598,26 +574,6 @@
 
   
 
-
-  
-
-    
-      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://isomorphism.space/hello-world.html';
-          this.page.identifier = 'hello-world.html';
-          this.page.title = 'Hello World';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
 
   
 
