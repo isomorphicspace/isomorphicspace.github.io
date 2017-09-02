@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://isomorphism.space/"/>
-  <updated>2017-09-02T08:49:29.127Z</updated>
+  <updated>2017-09-02T08:51:35.354Z</updated>
   <id>http://isomorphism.space/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://isomorphism.space/java/Java%E4%B8%AD%E7%9A%84%E6%B5%81/"/>
     <id>http://isomorphism.space/java/Java中的流/</id>
     <published>2017-07-30T12:46:08.000Z</published>
-    <updated>2017-09-02T08:49:29.127Z</updated>
+    <updated>2017-09-02T08:51:35.354Z</updated>
     
-    <content type="html"><![CDATA[<p>Java中的流</p>
+    <content type="html"><![CDATA[<font size="6">Java中的流</font>
+
 <h2 id="什么是流？"><a href="#什么是流？" class="headerlink" title="什么是流？"></a>什么是流？</h2><p>就是抽象出的一个<strong>传输数据的通道</strong>，而这个通道存在于<strong>程序</strong>中<br><img src="http://otgbn6jmc.bkt.clouddn.com/java%E4%B8%AD%E7%9A%84%E6%B5%81/Stream.png" alt=""><br>流按照数据类型不同，可分为：字符流 和 字节流<br>流按照数据方向不同，可分为：输入流 和 输出流<br>流按照功能不同，可分为：节点流 和 处理流<br><img src="http://otgbn6jmc.bkt.clouddn.com/java%E4%B8%AD%E7%9A%84%E6%B5%81/java.IO.png" alt=""></p>
 <h2 id="流的抽象基类"><a href="#流的抽象基类" class="headerlink" title="流的抽象基类"></a>流的抽象基类</h2><p>java的IO流抽象基类有4个：</p>
 <p><strong>字节</strong>输入流：InputStream<br><strong>字节</strong>输出流：OutputStream<br><strong>字符</strong>输入流：Reader<br><strong>字符</strong>输出流：Writer</p>
@@ -84,8 +85,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;Java中的流&lt;/p&gt;
-&lt;h2 id=&quot;什么是流？&quot;&gt;&lt;a href=&quot;#什么是流？&quot; class=&quot;headerlink&quot; title=&quot;什么是流？&quot;&gt;&lt;/a&gt;什么是流？&lt;/h2&gt;&lt;p&gt;就是抽象出的一个&lt;strong&gt;传输数据的通道&lt;/strong&gt;，而这个通道存在于&lt;s
+      &lt;font size=&quot;6&quot;&gt;Java中的流&lt;/font&gt;
+
+&lt;h2 id=&quot;什么是流？&quot;&gt;&lt;a href=&quot;#什么是流？&quot; class=&quot;headerlink&quot; title=&quot;什么是流？&quot;&gt;&lt;/a&gt;什么是流？&lt;/h2&gt;&lt;p&gt;就是抽象出的一个&lt;strong&gt;传输数据的通道&lt;/st
     
     </summary>
     
