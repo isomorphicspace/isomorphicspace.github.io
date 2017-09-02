@@ -3,6 +3,85 @@
   
     
     <entry>
+      <title><![CDATA[java中的流]]></title>
+      <url>/java/Java%E4%B8%AD%E7%9A%84%E6%B5%81/</url>
+      <content type="html"><![CDATA[<h1 id="Java中的流"><a href="#Java中的流" class="headerlink" title="Java中的流"></a>Java中的流</h1><h2 id="什么是流？"><a href="#什么是流？" class="headerlink" title="什么是流？"></a>什么是流？</h2><p>就是抽象出的一个<strong>传输数据的通道</strong>，而这个通道存在于<strong>程序</strong>中<br><img src="http://otgbn6jmc.bkt.clouddn.com/java%E4%B8%AD%E7%9A%84%E6%B5%81/Stream.png" alt=""><br>流按照数据类型不同，可分为：字符流 和 字节流<br>流按照数据方向不同，可分为：输入流 和 输出流<br>流按照功能不同，可分为：节点流 和 处理流<br><img src="http://otgbn6jmc.bkt.clouddn.com/java%E4%B8%AD%E7%9A%84%E6%B5%81/java.IO.png" alt=""></p>
+<h2 id="流的抽象基类"><a href="#流的抽象基类" class="headerlink" title="流的抽象基类"></a>流的抽象基类</h2><p>java的IO流抽象基类有4个：</p>
+<p><strong>字节</strong>输入流：InputStream<br><strong>字节</strong>输出流：OutputStream<br><strong>字符</strong>输入流：Reader<br><strong>字符</strong>输出流：Writer</p>
+<blockquote>
+<p>以上4个流要记住，因为在API的<strong>写法</strong>上，其它关于流的类都是在这4个的基础上进行添加，如代表对文件的操作：<br>FileInputStream –&gt; File <strong>InputStream</strong><br>FileOutputStream –&gt; File <strong>OutputStream</strong><br>FileReader –&gt; File <strong>Reader</strong><br>FileWriter –&gt; File <strong>Writer</strong><br>这个流的本质上输入InputStream（OutputStream）还是Reader（Writer），取决于以什么结尾</p>
+</blockquote>
+<h2 id="字符流和字节流"><a href="#字符流和字节流" class="headerlink" title="字符流和字节流"></a>字符流和字节流</h2><p>字节流：能处理一切文件</p>
+<blockquote>
+<ul>
+<li><strong>InputStream</strong> 输入字节流，他的常用方法有：</li>
+<li>read(byte[] b) 读到byte[]字节数组中，返回的是读取的长度，没有可读取的文件返回-1</li>
+<li>read(byte[] b,int off,int len) //读到byte数组中,并指定从源文件哪里开始读和读多少到byte</li>
+<li>close()<br><strong>OutputStream</strong> 输出字节流，他的常用方法有：</li>
+<li>write(byte[] b) //将byte中的字节写入到输出流（调用write的这个对象初始化时指定的目的地）</li>
+<li>write(byte[] b,int off,int len) // 读到byte[]字节数组中，并指定从源文件哪里开始读，读多少</li>
+<li>flush() //只要是写用到了缓存(不仅仅是带buffered的流才会用到缓存)，都应该使用flush将缓存数据刷出</li>
+<li>close()</li>
+</ul>
+</blockquote>
+<p>字符流：只能处理纯文本的东西</p>
+<blockquote>
+<ul>
+<li><strong>Reader</strong></li>
+<li>read(char[] cbuf)</li>
+<li>read(char[] cbuf, int off, int len)</li>
+<li>close()<br><strong>Writer</strong></li>
+<li>write(char[] cbuf)</li>
+<li>write(char[] cbuf,int off,int len)</li>
+<li>flush()</li>
+<li>close()</li>
+</ul>
+</blockquote>
+<p><strong>一个文件拷贝的例子</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">步骤：</div><div class="line">1. 建立联系：File（源 和 目的地）</div><div class="line">2. 选择流：InputStream OutputStream</div><div class="line">3. 操作流：read write flush</div><div class="line">4. 关闭流：close</div><div class="line">*/</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CopyFileDemo</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">		<span class="comment">// 建立联系</span></div><div class="line">		File src = <span class="keyword">new</span> File(<span class="string">"D:/zjava/src/test.png"</span>);</div><div class="line">		File dst = <span class="keyword">new</span> File(<span class="string">"D:/zjava/dst/dst.png"</span>);</div><div class="line">		</div><div class="line">		<span class="comment">// 选择流</span></div><div class="line">		InputStream is = <span class="keyword">new</span> FileInputStream(src);</div><div class="line">		OutputStream os = <span class="keyword">new</span> FileOutputStream(dst);</div><div class="line">		</div><div class="line">		<span class="comment">// 处理流</span></div><div class="line">		<span class="keyword">byte</span>[] b = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</div><div class="line">		<span class="keyword">int</span> len = <span class="number">0</span>;</div><div class="line">		<span class="keyword">while</span>(-<span class="number">1</span> != (len = is.read(b)))&#123;</div><div class="line">			os.write(b, <span class="number">0</span>, len);</div><div class="line">		&#125;</div><div class="line">		os.flush();</div><div class="line">		</div><div class="line">		<span class="comment">// 关闭流  先打开的后关闭</span></div><div class="line">		os.close();</div><div class="line">		is.close();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="节点流"><a href="#节点流" class="headerlink" title="节点流"></a>节点流</h2><p>所谓节点流，就是<strong>流</strong>这个通道的源头和目的地（进来和出去的地方）。<br>哪些东西属于源头和目的地呢？既可以是那些实际的文件、数据库、网络上的资源，也可以是程序中的数组</p>
+<h2 id="处理流"><a href="#处理流" class="headerlink" title="处理流"></a>处理流</h2><p>处理流就是增强功能、提高性能的,处理流处理的对象是其它的流</p>
+<h3 id="缓冲流：让待处理的数据一次的读取或写入进缓冲区，避免频繁的读写，提高了性能"><a href="#缓冲流：让待处理的数据一次的读取或写入进缓冲区，避免频繁的读写，提高了性能" class="headerlink" title="缓冲流：让待处理的数据一次的读取或写入进缓冲区，避免频繁的读写，提高了性能"></a>缓冲流：让待处理的数据一次的读取或写入进缓冲区，避免频繁的读写，提高了性能</h3><blockquote>
+<ul>
+<li>BufferedWriter:处理输出字符流，使被处理的字符流具备了缓冲的功能</li>
+<li>处理的是其它的流，即参数传入的是其它的流</li>
+<li>wirte方法过后，都应该调用flush方法将缓冲区的数据刷出</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">	</div><div class="line">	Writer w = <span class="keyword">new</span> FileWriter(<span class="string">"D:/zjava/buffered/maybe.txt"</span>);</div><div class="line">	</div><div class="line">	<span class="comment">// BufferedWriter将要处理的流在初始化中传入</span></div><div class="line">	BufferedWriter bw = <span class="keyword">new</span> BufferedWriter(w);</div><div class="line">	</div><div class="line">	<span class="comment">// 写入字符信息</span></div><div class="line">	bw.write(<span class="string">"笃定一方 亦浪迹天涯"</span>);</div><div class="line">	</div><div class="line">	<span class="comment">// 将缓冲区的数据刷出后再关闭</span></div><div class="line">	bw.flush();</div><div class="line">	bw.close();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>BufferedReader:处理输入字符流，使被处理的字符流具备了缓冲的功能</li>
+<li>多了一个 readline() 的方法，要调用此方法，不能用多态</li>
+<li>readline() 的读取不包括换行符</li>
+<li>其原理还是调用read方法</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">	Reader r = <span class="keyword">new</span> FileReader(<span class="string">"D:/zjava/buffered/maybe.txt"</span>);</div><div class="line">	</div><div class="line">	<span class="comment">// BufferedWriter将要处理的流在初始化中传入</span></div><div class="line">	BufferedReader br = <span class="keyword">new</span> BufferedReader(r);</div><div class="line">	</div><div class="line">	<span class="comment">// 写入字符信息</span></div><div class="line">	String line = <span class="keyword">null</span>;</div><div class="line">	<span class="keyword">while</span>(<span class="keyword">null</span> != (line = br.readLine()))&#123;</div><div class="line">		System.out.println(line);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	br.close();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="转换流：这两个流本质上都属于字符流，InputStreamReader的作用是字节流到字符流的桥梁，而OutputStreamWriter的作用是字符流到字节流的桥梁，如果不指定编码的话，使用平台默认的字符编码"><a href="#转换流：这两个流本质上都属于字符流，InputStreamReader的作用是字节流到字符流的桥梁，而OutputStreamWriter的作用是字符流到字节流的桥梁，如果不指定编码的话，使用平台默认的字符编码" class="headerlink" title="转换流：这两个流本质上都属于字符流，InputStreamReader的作用是字节流到字符流的桥梁，而OutputStreamWriter的作用是字符流到字节流的桥梁，如果不指定编码的话，使用平台默认的字符编码"></a>转换流：这两个流本质上都属于字符流，InputStreamReader的作用是字节流到字符流的桥梁，而OutputStreamWriter的作用是字符流到字节流的桥梁，如果不指定编码的话，使用平台默认的字符编码</h3><blockquote>
+<p>IntputStreamReader的构造方法：<br>InputStreamReader isr = new InputStreamReader(InputStream is);//默认编码<br>InputStreamReader isr = new InputStreamReader(InputStream is, String charsetName);//指定编码<br>IntputStreamReader的主要方法：<br>int read(); 读取一个字符<br>int read(char[] cbuf); 读取的字符存储在字符数组中，返回读取的字符数</p>
+<p>OutputStreamWriter的构造方法：<br>OutputStreamWriter osw = new OutputStreamWriter(OutputStream os);//默认编码<br>OutputStreamWriter osw = new OutputStreamWriter(OutputStream os, String charsetName);//指定编码<br>OutputStreamWriter的主要方法：<br>void write(int c); 写一个单个字符<br>void write(String s, int off, int len); 写一个字符串的一部分<br>void flush(); 将缓冲的数据刷出</p>
+</blockquote>
+<p>如果想要获取键盘上的数据，可以将InputStreamReader的输入参数is指定为System.in<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取键盘上的数据</span></div><div class="line">InputStream is = System.in;</div><div class="line">InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(is);</div><div class="line"></div><div class="line"><span class="comment">// 获取文件中的数据</span></div><div class="line">InputStream is = <span class="keyword">new</span> FileInputStream(D:/zjava/buffered/maybe.txt);</div><div class="line">InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(is);</div><div class="line"></div><div class="line"><span class="comment">// 将数据打印到控制台上</span></div><div class="line">OutputStream os = System.out;</div><div class="line">OutputStreamWriter osw = <span class="keyword">new</span> OutputStreamWriter(os);</div><div class="line"></div><div class="line"><span class="comment">// 将数据打印到文件中</span></div><div class="line">OutputStream os = <span class="keyword">new</span> FileOutputStream(D:/zjava/buffered/maybe.txt);</div><div class="line">OutputStreamWriter sow = <span class="keyword">new</span> OutputStreamWriter(os);</div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> java </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[有效管理你的健康]]></title>
       <url>/health/%E6%9C%89%E6%95%88%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E5%81%A5%E5%BA%B7/</url>
       <content type="html"><![CDATA[<p>最近在<strong>得到</strong>上学到了不错的健康管理知识，抄录于此，希望这些知识对你也有所帮助！</p>
