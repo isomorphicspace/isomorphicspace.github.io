@@ -5,8 +5,7 @@
     <entry>
       <title><![CDATA[java中的流]]></title>
       <url>/java/Java%E4%B8%AD%E7%9A%84%E6%B5%81/</url>
-      <content type="html"><![CDATA[<p><font size="6">Java中的流</font></p>
-<big>Java中的流</big>
+      <content type="html"><![CDATA[<big>Java中的流</big>
 
 <h2 id="什么是流？"><a href="#什么是流？" class="headerlink" title="什么是流？"></a>什么是流？</h2><p>就是抽象出的一个<strong>传输数据的通道</strong>，而这个通道存在于<strong>程序</strong>中<br><img src="http://otgbn6jmc.bkt.clouddn.com/java%E4%B8%AD%E7%9A%84%E6%B5%81/Stream.png" alt=""><br>流按照数据类型不同，可分为：字符流 和 字节流<br>流按照数据方向不同，可分为：输入流 和 输出流<br>流按照功能不同，可分为：节点流 和 处理流<br><img src="http://otgbn6jmc.bkt.clouddn.com/java%E4%B8%AD%E7%9A%84%E6%B5%81/java.IO.png" alt=""></p>
 <h2 id="流的抽象基类"><a href="#流的抽象基类" class="headerlink" title="流的抽象基类"></a>流的抽象基类</h2><p>java的IO流抽象基类有4个：</p>
